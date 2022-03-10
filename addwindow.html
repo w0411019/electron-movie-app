@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <form id="addform" class="p-4">
+      <div  class="form-group">
+            <label for="title">Title:</label>
+            <input class="form-control" type="text" id="title" autofocus>
+          
+            <label for="genre">Genre:</label>   
+              <select class="form-control" id="genre" name="genre" onchange="showType(this.id,'genre')">
+                <option value="">Select Genre</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Horror">Horror</option>
+                <option value="Thriller">Thriller</option>
+                <option value="Action">Action</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Mystery">Mystery</option>
+                <option value="Romance">Romance</option>
+                <option value="Romance">Fantasy</option>
+                <option value="Romance">Science Fiction</option>
+              </select>
+          
+            <label for="rating">Rating: </label>
+              <select class="form-control" id="rating" name="rating" onchange="showType(this.id,'rating')">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+          
+            <label for="review">Review: </label>
+            <textarea rows="4" cols="4" class="form-control" id="review" ></textarea>
+          
+            <label for="imageLink">Image Link: </label>
+            <input class="form-control" type="text" id="imageLink">
+        </div>
+      </div>
+      <button class="btn btn-dark float-right mt-4" type="submit">add movie</button>
+    </form>
+
+  <script src="addwindow.js"></script>
+  </body>
+</html>

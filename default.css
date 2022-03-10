@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+  }
+
+  h1 {
+    text-align: center;
+    background-color: rgb(142, 188, 206);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-family:sans-serif;
+  }
+  
+  th {
+    background-color: rgb(199, 198, 198);
+  }
+
+  p {
+    margin-left: 30px;
+    font-family:serif;
+  }

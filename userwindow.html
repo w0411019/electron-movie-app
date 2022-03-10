@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Set Username</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  </head>
+  <body class="p-4">
+      <div class="form-group">
+        <label for="user">Username:</label>
+        <input class="form-control" type="text" id="user" autofocus>
+      </div>
+      <button class="btn btn-dark float-right mt-4" id="userSet">Set Username</button>
+      <script>
+
+        const {ipcRenderer} = require('electron')
+    
+        const userSet = document.getElementById("userSet");
+    
+        userSet.addEventListener('click', setUser);
+    
+        function setUser(){
+            var user = document.getElementById("user").value;
+            ipcRenderer.send('setUser', user)
+        
+    }
+    
+    </script>
+</body>
+</html>
